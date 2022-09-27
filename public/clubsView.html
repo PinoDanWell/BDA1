@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Session Test</title>
+    <link href="clubsViewStyle.css" rel="stylesheet" >
+  </head>
+  <body onload="viewClubs()">
+
+    <div class="header">
+      <a href="#default" class="logo">Blue Bay High School</a>
+      <div class="header-right">
+        <a class="active" href="#">Cursos Registrados</a>
+        <a href="clubRegistration.html">Registrar Nuevo Curso</a>
+      </div>
+    </div>
+    <div class="container">
+      <div id="clubsContainer">
+        <h2> Cursos registrados</h2>
+        <form action="/registerClub" method="POST">
+            <input type="text" value="Nombre del club" name="clubName" id="clubName" style="font-weight: bold; width:30%; border-radius: 10px; color:#6497E2; background: white;" readonly>
+            <input type="text" value="Categoría" name="category" id="category" style="font-weight: bold; width:30%; border-radius: 10px; color:#6497E2; background: white;" readonly>
+        </form>
+      </div>
+      <div class="logoutbtn">
+        <a href="index.html">Cerrar Sesión</a>
+      </div>
+    </div>
+    
+    </body>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script src="client.js"></script>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Session Test</title>
+    <link href="styleClubs.css" rel="stylesheet" >
+  </head>
+  <body>
+
+    <div class="header">
+      <a href="#default" class="logo">Blue Bay High School</a>
+      <div class="header-right">
+        <a href="clubsView.html">Clubs Registrados</a>
+        <a class="active" href="#">Registrar Nuevo Clubes</a>
+      </div>
+    </div>
+
+    <form action="/registerClub" method="POST">
+      <div class="container">
+        <h6>Registro de nuevos clubes</h6>
+        <p>Especifique el nombre del club y seleccione una categoría.</p>
+        
+        <label for="clubName"><b>Nombre del club</b></label>
+        <hr style="margin-top:-1em;border-width:0" />
+        <input type="text" placeholder="Ingrese el nombre del curso" style="height:52px;width:464px;" name="clubName" id="clubName" required>
+
+        <hr style="margin-top:0em;border-width:0" />
+        <label for="clubCategory"><b>Categoría del club</b></label>
+    
+        <select class="custom-select" style="height:52px;width:464px;" name="category" id="category">
+          <option value="Artes">Artes</option>
+          <option value="Ciencias Naturales">Ciencias Naturales</option>
+          <option value="Ciencias Sociales">Ciencias Sociales</option>
+          <option value="Culturales">Culturales</option>
+          <option value="Deportivas">Deportivas</option>
+          <option value="Humanidades">Humanidades</option>
+          <option value="Idiomas">Idiomas</option>
+          <option value="Laboratorios">Laboratorios</option>
+          <option value="Matemáticas">Matemáticas</option>
+          <option value="Música">Música</option>
+          <option value="Otra">Otra</option>
+          
+        </select>
+    
+     
+    
+        <button type="submit" class="registerbtn">Registrar Curso</button>
+        <div class="logoutbtn">
+          <a href="index.html">Cerrar Sesión</a>
+        </div>
+    
+      </div>
+    </form>
+    </body>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script src="client.js"></script>
+</html>

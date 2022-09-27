@@ -1,0 +1,269 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(180deg, #6497E2 33.33%, #FCFDFF 94.79%);
+  margin: 0;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  width: 528px;
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 40px;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.4);
+  transform: translate(86%, 10%);
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  box-sizing: border-box;
+  border: 2.5px solid #FFFFFF; 
+  outline: none;
+  background: #FFFFFF;
+  mix-blend-mode: normal;
+  border-radius: 10px;
+  color: #6497E2;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  border-color:  #6497E2;
+  background: #FFFFFF;
+  color: #aac6ef;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+h2, b {
+  font: 800 1rem 'Manrope', sans-serif;
+  color:#ffffff;
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font: 800 1.4rem 'Manrope', sans-serif;
+  color:#ffffff;
+  text-align: center;
+}
+
+h3 {
+  font: 800 0.7rem 'Manrope', sans-serif;
+  color:#ffffff;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  padding: 0px;
+  margin-top: 0.1rem;
+  margin-bottom: 1.1rem;
+  color: white;
+}
+
+input {
+  font: 800 1rem 'Manrope', sans-serif;
+  color: #6497E2;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  opacity: 1;
+  width: 100%;
+  height: 55px;
+  padding: 1rem 1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  background: #6497E2;
+  mix-blend-mode: normal;
+  border-radius: 10px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+.logoutbtn {
+  color: #5c8ad0;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 0.2rem;
+  margin-bottom: 0rem;
+  font-size: 0.9rem;
+}
+
+/* Add a blue text color to links */
+a {
+  color: #5c8ad0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #ffffff;
+  padding: 20px 10px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color:#5c8ad0;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  font: 800 1rem 'Manrope', sans-serif;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #ffffff;
+  color: #5c8ad0;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: #5c8ad0;
+  color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+h6{
+  text-align: center;
+  font: 800 2rem 'Manrope', sans-serif;
+  color:#FFFFFF;
+  padding: 0rem;
+  margin-bottom: 0.5rem;
+  margin-top: 00.5rem;
+}
+
+.custom-select {
+  position: relative;
+  font: 800 1rem 'Manrope', sans-serif;
+  color:#aac6ef;
+  padding: 0.1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
+  border: none;
+  background-color: white;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+  font: 800 1rem 'Manrope', sans-serif;
+  color:#aac6ef;
+  padding: 0.1rem;
+
+}
+
+.select-selected {
+  background-color: #5c8ad0;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #5c8ad0;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+} 

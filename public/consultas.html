@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Consultas</title>
+    
+    <!---CSS---->
+    <link rel="stylesheet" href="styleConsultas.css">
+</head>
+<body>
+    <!---Consulta 1---->
+    <div class="container">
+        <button class="form__button" type="submit" onclick="getPopularCategories()">
+            <img class = "image" src = "img/consulta1.png" alt = "consulta 1" height = 201 lenght = 95>
+            Todos los clubes
+        </button>
+    </div>
+
+    <!---Consulta 2---->
+    <div class="container">
+        <button class="form__button" type="submit" onclick="usersWithMostClubs()">
+            <img class = "image" src = "img/consulta2.png" alt = "consulta 2" height = 201 lenght = 95>
+            Top 3 participaciones
+        </button>
+    </div>
+
+    <!---Consulta 3---->
+    <div class="container">
+        <button class="form__button" type="submit" onclick="mostSuggestedClubs()">
+            <img class = "image" src = "img/consulta3.png" alt = "consulta 3" height = 201 lenght = 95>
+            Top 5 clubes
+        </button>
+    </div>
+
+    <!---Consulta 4---->
+    <div class="container">
+        <button class="form__button" type="submit" onclick="lessSuggestedClubs()">
+            <img class = "image" src = "img/consulta4.png" alt = "consulta 4" height = 201 lenght = 95>
+            Bottom 3 clubes
+        </button>
+    </div>
+    <!---Java Script---->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="client.js"></script>
+</body>
