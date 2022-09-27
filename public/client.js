@@ -101,8 +101,8 @@ function getPopularCategories() {
         throw new Error('Request failed');
     })
     .then(function(data) {
-        var alerta = 'Las categorías con más clubes son: \n\n';
-        for (var i=0; i < 3; i++) {
+        var alerta = 'Las cantidad de clubes por categoría es: \n\n';
+        for (var i=0; i < data.length; i++) {
             alerta = alerta + data[i]["_id"][0] + ": " + data[i]["count"] + "\n";
         }
         alert(alerta);
