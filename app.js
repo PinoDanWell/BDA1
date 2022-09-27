@@ -187,7 +187,7 @@ app.post('/lessSuggestedClubs',  async (req, res) => {
     res.send(await club.aggregate([{$group: {_id: ["$clubName", "$clubCategory"], cantidad: {"$sum":1}}}, {$sort:{cantidad:1}}, {$limit: 3}]))
 })
 
-app.listen(3000, () =>{
+app.listen(process.env.PORT || 3000, () =>{
     console.log('Servidor Iniciado');
 });
 
